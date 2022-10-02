@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --pastelblue: #1c4364;
+    --pastelgreen: #33564e;
+    --grass: #76a65c;
+    --grasslighter: #a3b57e;
+    --yellow: #eee770;
+    --orange: #ef9018;
+}
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+
+    position: relative;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bolder;
+}
+
+.page-title {
+    letter-spacing: 2px;
+    padding-bottom: 1.3rem;
+    border-bottom: 2px solid #6C757D;
+}
+
+.page-title h2 {
+    background-color: var(--yellow);
+    display: inline-block;
+    padding: 1rem;
+    color: #555;
+}
+
+nav.navbar {
+    border-bottom: 2px solid #FFFFFF;
+    transition: all 1s;
+}
+
+nav.navbar .navbar-brand {
+    cursor: pointer;
+    user-select: none;
+}
+
+nav.navbar .navbar-brand img {
+    width: 10%;
+    margin-top: -5px;
+}
+
+nav.navbar #NavLinks {
+    overflow: hidden;
+    transition: all 1s;
+}
+
+nav.navbar #NavLinks a {
+    transition: all 1s;
+}
+
+nav.navbar #NavLinks a:hover {
+    color: #FCDF51;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+header.jumbotron {
+    padding: 5rem;
+}
+
+header.jumbotron::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/header.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: grayscale(70%);
+}
+
+header.jumbotron .container {
+    padding: 200px 0;
+}
+
+header.jumbotron .container h1, header.jumbotron .container h4 {
+    width: 40%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    user-select: none;
+}
+
+header.jumbotron .container h1 {
+    color: #e9e9e9;
+    border: 10px solid var(--pastelblue);
+    letter-spacing: 0.5rem;
+}
+
+
+
+/* section {
+    padding: 80px 0;
+} */
+
+section#Intro {
+    padding: 3rem 0;
+    background-color: var(--pastelgreen);
+}
+
+section#Intro .container .row .img-intro {
+    background-image: url(./assets/camp.jpg);
+    background-size: cover;
+    height: 400px;
+    background-position: center center;
+}
+
+
+section#Services {
+    padding: 3rem 0;
+}
+
+
+section#Services .container .row .wow {
+    visibility: hidden;
+}
+
+section#Services .container .row .card {
+    margin-bottom: 1rem;
+}
+
+section#Services .container .row .card .img-wrap {
+    height: 200px;
+    overflow: hidden;
+}
+
+section#Services .container .row .card .img-wrap img {
+    width: 200%;
+    left: -100%;
+}
+
+section#Services .container .row .card .card-title {
+    text-align: center;
+}
+
+section#Services .container .row .card .btn-warning {
+    background-color: #FCDF51;
+    color: #0071CE;
+    border: none;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+section#Economy {
+    background-color: var(--pastelgreen);
+    padding: 3rem 0;
+}
+
+
+section#Economy .wow {
+    visibility: hidden;
+}
+
+section#Economy .card {
+    margin-bottom: 1rem;
+    user-select: none;
+}
+
+section#Economy .card .card-header {
+    color: #000000;
+    background-color: var(--grasslighter);
+    padding-bottom: 0;
+}
+
+section#Economy .card .card-header img {
+    margin-top: 0.5rem;
+    width: 150px;
+    height: 120px;
+}
+
+section#Economy .card .card-header h4 {
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+section#Economy .card .card-body {
+    padding: 2rem;
+}
+
+section#Economy .card p.card-text {
+    color: #555555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section#Places {
+    padding-bottom: 0;
+}
+
+section#Places .page-title {
+    padding-bottom: 0;
+    border-bottom: none;
+    background-image: linear-gradient(to bottom, rgba(243, 234, 199, 0.6), rgba(228, 234, 237, 0.8));
+
+}
+
+section#Places .row {
+    overflow: hidden;
+}
+
+section#Places .row .col-md-6 {
+    padding: 5rem 3rem;
+    user-select: none;
+}
+
+section#Places .row .col-md-6 a {
+    text-decoration: none;
+}
+
+section#Places .row .bg-city {
+    background-image: linear-gradient(to bottom, rgba(243, 234, 199, 0.6), rgba(228, 234, 237, 0.8));
+}
+
+section#Places .row .bg-suburban {
+    background-image: linear-gradient(to bottom, rgba(245, 188, 190, 0.7), rgba(228, 234, 237, 0.8));
+}
+
+section#Places .row .bg-fashion {
+    background-image: linear-gradient(to bottom, rgba(228, 234, 237, 0.7), rgba(218, 206, 186, 0.6));
+}
+
+section#Places .row .bg-food {
+    background-image: linear-gradient(to bottom, rgba(228, 234, 237, 0.7), rgba(232, 68, 48, 0.5));
+}
+
+section#Places .row .bg-wine {
+    background-image: linear-gradient(to bottom, rgba(228, 234, 237, 0.7), rgba(206, 187, 91, 0.5));
+}
+
+section#Places .row h2.title {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    background-color: #0071CE;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+section#Places .row p.intro {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6C757D;
+}
+
+section#Places .row a.btn {
+    padding: 0.5rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 1rem;
+
+}
+
+section#Places .row a.btn:hover {
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+section#Places .row a.btn:hover i {
+    animation: arrowmove 1s infinite;
+}
+
+section#Places .row a.btn i {
+    transition: all 0.5s;
+    margin-left: 1rem;
+}
+
+section#Places .row a.btn-primary {
+    color: #FFFFFF;
+}
+
+section#Places .row .img {
+    transition: all 0.5s;
+    background-size: cover;
+    background-position: center center;
+}
+
+section#Places .row .bodrum {
+    background-image: url(./assets/locations/bodrum.jpg)
+}
+
+section#Places .row .kas {
+    background-image: url(./assets/locations/kaş.jpg)
+}
+
+section#Places .row .kumluca {
+    background-image: url(./assets/locations/kumluca.jpg)
+}
+
+section#Places .row .marmaris {
+    background-image: url(./assets/locations/marmaris.jpg)
+}
+
+section#Places .row .urla {
+    background-image: url(./assets/locations/urla.jpg)
+}
+
+
+
+
+
+
+
+section#Contact .row {
+    overflow: hidden;
+}
+
+section#Contact .row .map {
+    background-image: url(./assets/contact.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+section#Contact .row .col-sm-7 {
+    background-color: #0071CE;
+}
+
+section#Contact .row .col-sm-7 .page-title {
+    color: #FCDF51;
+    border-bottom: 2px solid #FCDF51;
+}
+
+section#Contact .row .col-sm-7 i {
+    color: #FCDF51;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+section#Contact .row .col-sm-7 p {
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+
+
+footer {
+    background: var(--pastelblue);
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+footer a:hover, a:focus {
+    text-decoration: none;
+}
+
+footer .form-control {
+    background: #212529;
+    border-color: #545454;
+}
+
+footer .form-control:focus {
+    background: #212529;
+}
+
+
+
+
+
+
+
+
+#skrollr-body {
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes arrowmove {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(80%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section#Places .row.city, section#Places .row.c-c, section#Places .row.wine {
+        flex-flow: column-reverse;
+    }
+
+    section#Places .row .img {
+        padding: 10rem 0;
+    }
+}
