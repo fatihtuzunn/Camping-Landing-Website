@@ -427,9 +427,18 @@ footer .form-control:focus {
 @media screen and (max-width: 767px) {
 
     *{
-        animation: none !important;
-        visibility: inherit !important;
+        animation: none ;
         
+
+    }
+
+    section#Services .container .row .col-md-4 {
+        visibility: inherit !important;
+    }
+
+    section#Economy .wow {
+        visibility: inherit !important;
+
     }
     section#Places .row.city, section#Places .row.c-c, section#Places .row.wine {
         flex-flow: column-reverse;

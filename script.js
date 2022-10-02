@@ -40,7 +40,7 @@ var resizeImg = function() {
   //   .css(bgz, '');
 }
 
-/* var preload = function() {
+var preload = function() {
   var blockStyle = {
     border: none,
     padding: '2rem',
@@ -72,7 +72,7 @@ var resizeImg = function() {
       }
     });
   }, 4000);
-}; */
+};
 
 $Seemore.hover(scaleImg, resizeImg);
 $WIN.scroll(toggleNav);
